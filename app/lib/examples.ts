@@ -47,24 +47,10 @@ export function getParallelDoorsExample(): ProjectionExample {
   };
 }
 
-export function getParallelogramExample(): ProjectionExample {
-  return {
-    id: "parallelogram",
-    name: "VD 3: Hình bình hành",
-    type: "parallelism",
-    deltaCenter: [-6.0, 2.5, -3.5],
-    deltaDir: [0.3, -1.0, 0.25],
-    line1Center: [-1.0, 2.5, -1.0],
-    line1Dir: [0.8, 0.2, 0.5],
-    line2Center: [1.0, 2.5, 1.0],
-    tValues: { A: -2.0, B: 2.0, C: -2.0, D: 2.0 },
-  };
-}
-
 export function getRatioOneLineExample(): ProjectionExample {
   return {
     id: "ratio-one-line",
-    name: "VD 4: Tỉ số (1 đường)",
+    name: "VD 3: Tỉ số (1 đường)",
     type: "ratio",
     deltaCenter: [-6.0, 2.5, -3.5],
     deltaDir: [0.4, -1.0, -0.2],
@@ -77,7 +63,7 @@ export function getRatioOneLineExample(): ProjectionExample {
 export function getRatioTwoLinesExample(): ProjectionExample {
   return {
     id: "ratio-two-lines",
-    name: "VD 5: Tỉ số (2 đường //)",
+    name: "VD 4: Tỉ số (2 đường //)",
     type: "ratio",
     deltaCenter: [-6.0, 2.5, -3.5],
     deltaDir: [0.4, -1.0, -0.2],
@@ -91,7 +77,6 @@ export function getRatioTwoLinesExample(): ProjectionExample {
 export const projectionExamples: ProjectionExample[] = [
   getCollinearStandardExample(),
   getParallelDoorsExample(),
-  getParallelogramExample(),
   getRatioOneLineExample(),
   getRatioTwoLinesExample(),
 ];
